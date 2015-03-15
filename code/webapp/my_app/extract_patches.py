@@ -45,7 +45,7 @@ class ExtractPatches(object):
 
 
 if __name__ == '__main__':
-    ep = ExtractPatches(['/Users/kuoyen/Documents/capstone/images/uniform_100/rustic/rustic190.jpg'])
+    ep = ExtractPatches(['/Users/kuoyen/Documents/myweddingstyle/images/uniform_100/'])
     ep.run_extract_patch()
 
 

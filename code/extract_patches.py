@@ -7,11 +7,12 @@ from helper import star
 from dom_colors import DominantColor
 from sklearn.feature_extraction import image
 from skimage import io
+from sklearn.preprocessing import StandardScaler
 
 
 class ExtractPatches(object):
 
-    def __init__(self, img_num, root_dir='/Users/kuoyen/Desktop/wedding/uniform_100'):
+    def __init__(self, img_num, root_dir='/Users/kuoyen/Documents/myweddingstyle/images/uniform_100'):
         dc = DominantColor(img_num, root_dir)
         self.all_colors_mat = dc.run_dom_colors(10, 5, False, 'raw_dom_color.pkl')
         self.all_files = dc.all_files
@@ -37,7 +38,9 @@ class ExtractPatches(object):
         arr = np.array(arr)
         print "@@@@@@@@@@@", arr
         print np.array(arr).shape
-
+        #     arr.append(np.concatenate(arr[np.newaxis, :], axis=1))
+        # # arr = np.array(arr)
+        # # print arr.shape
         return arr
 
     def run_extract_patch(self):
@@ -52,20 +55,34 @@ class ExtractPatches(object):
             img_patches = self.extract_patch(img = img, dominant_color_vector = dom_color_vec)
             print "@@@@@", img_patches.shape
             all_img_patches.append(np.array(img_patches))
+
+        # feat_matrix = np.append((np.array(all_img_patches)), axis =0)
+        #     if feat_matrix is None:
+        #         feat_matrix = img_patches
+        #     else:
+        #         feat_matrix = np.concatenate((feat_matrix, img_patches), axis =0)
+        # print feat_matrix.shape
         self.feature_mat = np.concatenate(all_img_patches, axis=0)
         print "DONE with FEATURE MATRIX:", self.feature_mat.shape
         return self.feature_mat
 
+    def standard_scaler(self):
+        scaler = StandardScaler()
+        self.feat_mat_scaled = self.scaler.fit_transform(self.feature_mat)
+        print "scaled matrix"
+        return self.feature_mat_scaled
+
     def save_pkl(self):
-        pkl_path = '/Users/kuoyen/Desktop/wedding/extract_patches_500img_0330.pkl'
-        pkl.dump(self.feature_mat, open(pkl_path, 'wb'))
+        pkl_path = '/Users/kuoyen/Desktop/wedding/extract_patches25_1000img_7dom_0145.pkl'
+        pkl.dump(self.feature_mat_scaled, open(pkl_path, 'wb'))
         print "finished pickling", pkl_path
 
     # self.y = np.array(self.label_vector)[:,np.newaxis]
 
 if __name__ == '__main__':
-    ep = ExtractPatches(500)
+    ep = ExtractPatches(1000)
     ep.run_extract_patch()
+    ep.standard_scaler()
     ep.save_pkl()
 
 

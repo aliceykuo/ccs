@@ -114,7 +114,7 @@ class ImageLoader(object):
         img = io.imread(file_img)
         # img = img.resize(size)
         return img
-        # img_read = io.imread('/Users/kuoyen/Documents/capstone/images/uniform/ballroom/ballroom0.jpg')
+        # img_read = io.imread('/Users/kuoyen/Documents/myweddingstyle/images/uniform/ballroom/ballroom0.jpg')
         
     def load_images(self):
         '''
@@ -131,7 +131,7 @@ class ImageLoader(object):
         self.img_label_pair = []
         self.label_vector = []
         for file_img in self.all_files:
-            #/Users/kuoyen/Documents/capstone/images/uniform/ballroom/ballroom0.jpg
+            #/Users/kuoyen/Documents/myweddingstyle/images/uniform/ballroom/ballroom0.jpg
             img = self.load_image(file_img)
             label = self.get_label(file_img)
             label_int = self.label_ints[label]
@@ -267,7 +267,7 @@ class ImageLoader(object):
             segments.append(seg_3)
             segmented_filenames = []
             for ind, seg in enumerate(segments):
-                filename = '/Users/kuoyen/Documents/capstone/images/segmented_1/'+ str(i) + 'seg' + str(ind) + '.jpg'
+                filename = '/Users/kuoyen/Documents/myweddingstyle/images/segmented_1/'+ str(i) + 'seg' + str(ind) + '.jpg'
                 # print "segmented filename", filename
                 self.img_callback(seg, filename, label_int)
                 segmented_filenames.append(filename)
@@ -296,7 +296,7 @@ class ImageLoader(object):
                 self.transformed_img_mat = filtered_img_mat
             else:
                 self.transformed_img_mat = np.concatenate((self.transformed_img_mat, filtered_img_mat), axis=0)
-            filename = '/Users/kuoyen/Documents/capstone/images/transformed_1/filtered_' + str(label_int) + '_'+str(i)+'.jpg'
+            filename = '/Users/kuoyen/Documents/myweddingstyle/images/transformed_1/filtered_' + str(label_int) + '_'+str(i)+'.jpg'
             self.all_files_transformed.append(filename)
             self.img_callback(file_img, filename, label_int)
         print "post tranformed image matrix shape", self.transformed_img_mat.shape
@@ -317,7 +317,7 @@ class ImageLoader(object):
     #         else:
     #             self.transformed_img_mat = np.concatenate((self.transformed_img_mat, filtered_img_mat), axis=0)
     #         label_int = pair[1]
-    #         filename = '/Users/kuoyen/Documents/capstone/images/transformed/filtered_' + str(label_int) + '_'+str(i)+'.jpg'
+    #         filename = '/Users/kuoyen/Documents/myweddingstyle/images/transformed/filtered_' + str(label_int) + '_'+str(i)+'.jpg'
     #         self.all_files_transformed.append(filename)
     #         self.img_callback(file_img, filename, label_int)
     #     print "***********"
@@ -387,7 +387,7 @@ class ImageLoader(object):
         return dropout_arr
 
     def delete_files(self):
-        folder = '/Users/kuoyen/Documents/capstone/images/transformed_1'
+        folder = '/Users/kuoyen/Documents/myweddingstyle/images/transformed_1'
         for the_file in os.listdir(folder):
             file_path = os.path.join(folder, the_file)
             try:
@@ -401,11 +401,11 @@ if __name__ == '__main__':
    loader.delete_files()
    # ts = time.time()
    # st = datetime.datetime.fromtimestamp(ts).strftime('%m%d_%H%M')
-   # self.path = '/Users/kuoyen/Documents/capstone/images/transformed' + st
+   # self.path = '/Users/kuoyen/Documents/myweddingstyle/images/transformed' + st
    # trans_dir = mkdir_p(path)
    # print "print path", path
-    #ipython load_file.py /Users/kuoyen/Documents/capstone/images/uniform/ 1
-    #ipython load_file.py /Users/kuoyen/Documents/capstone/images/uniform_60 1
+    #ipython load_file.py /Users/kuoyen/Documents/myweddingstyle/images/uniform/ 1
+    #ipython load_file.py /Users/kuoyen/Documents/myweddingstyle/images/uniform_60 1
    loader.all_image_paths()
    loader.load_images()
    loader.pre_trans()

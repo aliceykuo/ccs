@@ -64,8 +64,8 @@ class ImageLoader(object):
         self.label_vector = []
         # Processing raw file (not segmented)
         for file_img in self.all_files:
-            # path = /Users/kuoyen/Documents/myweddingstyle/images/uniform/ballroom/ballroom0.jpg
-            #/Users/kuoyen/Documents/myweddingstyle/images/uniform/ballroom/ballroom0.jpg
+            # path = /Users/kuoyen/Documents/capstone/images/uniform/ballroom/ballroom0.jpg
+            #/Users/kuoyen/Documents/capstone/images/uniform/ballroom/ballroom0.jpg
             img = self.load_image(file_img)
             label = self.get_label(file_img)
             label_int = label_ints[label]
@@ -106,6 +106,6 @@ class ImageLoader(object):
 
 
 if __name__ == '__main__':
-    il = ImageLoader(root_dir='/Users/kuoyen/Desktop/wedding/uniform_100',
-                     img_num=500, segment=True)
+    il = ImageLoader(root_dir='/Users/kuoyen/Documents/myweddingstyle/images/uniform_100',
+                     img_num=1000, segment=False)
     il.load_images()

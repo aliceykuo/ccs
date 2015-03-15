@@ -112,7 +112,7 @@ class ImageLoader(object):
         img = io.imread(file_img)
         # img = img.resize(size)
         return img
-        # img_read = io.imread('/Users/kuoyen/Documents/capstone/images/uniform/ballroom/ballroom0.jpg')
+        # img_read = io.imread('/Users/kuoyen/Documents/myweddingstyle/images/uniform/ballroom/ballroom0.jpg')
         
     def load_images(self):
         '''
@@ -129,7 +129,7 @@ class ImageLoader(object):
         self.img_label_pair = []
         self.label_vector = []
         for file_img in self.all_files:
-            #/Users/kuoyen/Documents/capstone/images/uniform/ballroom/ballroom0.jpg
+            #/Users/kuoyen/Documents/myweddingstyle/images/uniform/ballroom/ballroom0.jpg
             img = self.load_image(file_img)
             label = self.get_label(file_img)
             label_int = self.label_ints[label]
@@ -246,7 +246,7 @@ class ImageLoader(object):
 
             segmented_filenames = []
             for ind, seg in enumerate(segments):
-                filename = '/Users/kuoyen/Documents/capstone/images/segmented/' + str(i) + 'seg' + str(ind) + '.jpg'
+                filename = '/Users/kuoyen/Documents/myweddingstyle/images/segmented/' + str(i) + 'seg' + str(ind) + '.jpg'
                 self.img_callback(seg, filename, label_int)
                 segmented_filenames.append(filename)
             self.all_segmented_filenames.append(segmented_filenames)
@@ -339,7 +339,7 @@ class ImageLoader(object):
         return dropout_arr
 
     def delete_files(self):
-        folder = '/Users/kuoyen/Documents/capstone/images/transformed_1'
+        folder = '/Users/kuoyen/Documents/myweddingstyle/images/transformed_1'
         for the_file in os.listdir(folder):
             file_path = os.path.join(folder, the_file)
             try:
@@ -353,11 +353,11 @@ if __name__ == '__main__':
    # loader.delete_files()
    ts = time.time()
    st = datetime.datetime.fromtimestamp(ts).strftime('%m%d_%H%M')
-   path = '/Users/kuoyen/Documents/capstone/images/transformed' + st
+   path = '/Users/kuoyen/Documents/myweddingstyle/images/transformed' + st
    trans_dir = mkdir_p(path)
    print "print path", path
-    #ipython load_file.py /Users/kuoyen/Documents/capstone/images/uniform/ 1
-    #ipython load_file.py /Users/kuoyen/Documents/capstone/images/uniform_60 1
+    #ipython load_file.py /Users/kuoyen/Documents/myweddingstyle/images/uniform/ 1
+    #ipython load_file.py /Users/kuoyen/Documents/myweddingstyle/images/uniform_60 1
    loader.all_image_paths()
    loader.load_images()
    loader.pre_trans()

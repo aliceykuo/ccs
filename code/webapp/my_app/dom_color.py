@@ -39,7 +39,7 @@ class DominantColor(object):
         """
         :param k:
         :param ncolor:
-        :param segment: BOOLEAN if you wanna run dom color on segments of an image or not
+        :param segment: BOOLEAN if you want to run segments of an image or not
         :return:
         """
         all_color_lst = []
@@ -58,7 +58,7 @@ class DominantColor(object):
         return all_color_mat
 
 if __name__ == '__main__':
-    dc = DominantColor(['/Users/kuoyen/Documents/capstone/images/uniform_100/rustic/rustic190.jpg'])
+    dc = DominantColor(['/Users/kuoyen/Documents/myweddingstyle/images/uniform_100/'])
     dc.run_dom_colors(10, 5)
 
 

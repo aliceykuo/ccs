@@ -32,7 +32,7 @@ def extract_patch(img, patch_size = (10,10), max_patches = 100,dominant_color_ve
     if dominant_color_vector is None:
         raise 'No dominant colors found!'
     # won't need to read in image 
-    # img = io.imread('/Users/kuoyen/Documents/capstone/images/uniform_100/ballroom/ballroom0.jpg')
+    # img = io.imread('/Users/kuoyen/Documents/myweddingstyle/images/uniform_100/ballroom/ballroom0.jpg')
     '''
     pre trans matrix has dominant colors of (SAMPLES X 15)
     have original img matrix that will be divided into "n patches" 

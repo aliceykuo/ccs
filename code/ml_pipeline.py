@@ -16,7 +16,7 @@ import scipy.cluster
 
 class PreprocessImg(object):
 
-    def __init__(self, path='/Users/kuoyen/Documents/capstone/images/uniform', size=(28,28)):
+    def __init__(self, path='/Users/kuoyen/Documents/myweddingstyle/images/uniform', size=(28,28)):
         self.path = path
         self.size = size
         self.std_size = size[0] *size[1] *3
@@ -72,7 +72,7 @@ class PreprocessImg(object):
         pass
 
     def dominant_color(self, directory='', n=3, k=10): 
-        raw_img_path = ('/Users/kuoyen/Documents/capstone/images/raw')
+        raw_img_path = ('/Users/kuoyen/Documents/myweddingstyle/images/raw')
         # TODO: remove pathing to get image 
         img_dir_path = os.path.join(raw_img_path, directory)
         print img_dir_path

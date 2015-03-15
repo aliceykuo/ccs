@@ -27,7 +27,7 @@ def random_forest(X, y):
 
     rf = RandomForestClassifier(n_estimators=50, n_jobs=-1)
     rf.fit(X, y)
-    pkl.dump(rf, open('/Users/kuoyen/Desktop/wedding/rf_model_500.pkl', 'wb'))
+    pkl.dump(rf, open('/Users/kuoyen/Desktop/wedding/rf_model_scaled_500.pkl', 'wb'))
     # rf.predict
 
     # pkl.dump(rf, open('rf.pkl', 'wb'))
@@ -43,13 +43,13 @@ def random_forest(X, y):
 
 
 if __name__ == '__main__':
-    # pkl_path1 = '/Users/kuoyen/Documents/capstone/images/pkl/mat_50_1000_minmaxscaler.pkl'
-    pkl_path1 = '/Users/kuoyen/Desktop/wedding/extract_patches25_500img_0310.pkl'
-    # pkl_path1 = '/Users/kuoyen/Desktop/wedding/extract_patches_1000img_0437.pkl'
+    # pkl_path1 = '/Users/kuoyen/Documents/myweddingstyle/images/pkl/mat_50_1000_minmaxscaler.pkl'
+    # pkl_path1 = '/Users/kuoyen/Desktop/wedding/extract_patches25_500img_0310.pkl'
+    pkl_path1 = '/Users/kuoyen/Desktop/wedding/extract_patches25_500img_scaled_0350.pkl'
 
     # finished pickling ../images/pkl/mat_30_1000_nonscaled.pkl
     # finished pickling ../images/pkl/mat_30_1000_stdscaled.pkl
-    # pkl_path2 = '/Users/kuoyen/Documents/capstone/images/pkl/mat_50_1000_stdscaler.pkl'
+    # pkl_path2 = '/Users/kuoyen/Documents/myweddingstyle/images/pkl/mat_50_1000_stdscaler.pkl'
     df = pd.read_pickle(pkl_path1)
     X = df[:, 1:]
     y = df[:, 0:1]

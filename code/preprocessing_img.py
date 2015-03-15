@@ -10,7 +10,7 @@ import pickle as pkl
 
 class PreprocessImg(object):
 
-    def __init__(self, path='/Users/kuoyen/Documents/capstone/images/uniform'):
+    def __init__(self, path='/Users/kuoyen/Documents/myweddingstyle/images/uniform'):
         self.path = path
    
 # setup a standard image size - downsize and get all images to the same dimensions 

@@ -7,7 +7,7 @@ from skimage.transform import resize, downscale_local_mean
 
 class StandardizeSize(object):
 
-    def __init__(self, path='/Users/kuoyen/Documents/capstone/images', raw_dir='raw', uniform_dir='uniform_100_v2'):
+    def __init__(self, path='/Users/kuoyen/Documents/myweddingstyle/images', raw_dir='raw', uniform_dir='uniform_100_v2'):
         self.raw_dir_path = os.path.join(path, raw_dir)
         self.uniform_dir_path = os.path.join(path, uniform_dir)
         self.raw_subdirs = os.listdir(self.raw_dir_path)
@@ -53,4 +53,4 @@ if __name__ == '__main__':
     ss = StandardizeSize()
     ss.copy_directory()
     print ss.standardize(n=1000)
-    # print io.imread('/Users/kuoyen/Documents/capstone/images/uniform/beach/beach100.jpg')
+    # print io.imread('/Users/kuoyen/Documents/myweddingstyle/images/uniform/beach/beach100.jpg')
