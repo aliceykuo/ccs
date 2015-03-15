@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
-<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="../static/js/spin.min.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="../static/css/style.css" />
+<script src='../static/js/wedding.js'></script>
 
 <body>
   <div class="container">
@@ -18,14 +21,15 @@
         <div>
             <form action="upload" method="post" enctype="multipart/form-data">
                 <input type="file" name="file"><br /><br />
-                <input type="submit" value="Upload">
+                <input class='spinner' type="submit" value="Upload">
             </form>
+            <div class='spinner'></div>
         </div>
       </div>
    </div>
 </body>
 <script>
-    $('.jumbotron').css('background-color', 'transparent');
+    
 </script>
 
 </html>

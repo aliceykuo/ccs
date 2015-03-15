@@ -38,12 +38,19 @@ def upload():
     if file and allowed_file(file.filename):
         # Make the filename safe, remove unsupported chars
         filename = secure_filename(file.filename)
+
+        # save file
         print 'saving file...'
         print filename
-        file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
-        fname_lst.append(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+        filepath = os.path.join(app.config['UPLOAD_FOLDER'], filename)
+        file.save(filepath)
+        fname_lst.append(filepath)
+
+        # prediction
         print 'predicting...'
         results_page = preprocess_and_predict(fname_lst)
+
+    # return template prediction
     return render_template(results_page)
 
 def preprocess_and_predict(fname_lst):
