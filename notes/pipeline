@@ -1,0 +1,44 @@
+standardsize 
+- starndard size 
+
+ML pipeline
+- takes in reshaepd 
+- filtering 
+	output shape specified 
+	reshape it to output shape (downsize)
+	post-process (filters and whatever else)
+	-ravel add to featre matrix list with label 
+	create feature matrix x, y 
+
+	each row
+	- standard scaler on feature matrix (X)
+
+	and then models
+- creates feature matrix 
+- after pr
+
+ML pipeline 
+
+
+image - run kmeans on just the matrix ()
+
+
+list of tuples 
+
+
+
+FILTER TRANSFORM 
+load into memory - np array
+extra additional features from raw image 
+- filter/transform (raw )
+once in the post with the transform 
+- extrat addtional features from post process 
+- create feature matrix/ vector 
+feature matrix 
+
+then merge a raveled image with pre and post filters into one feature  matr
+
+baseline - raveled filtered image + [re
+
+1 784 + 3 + (features from after filters)
+]

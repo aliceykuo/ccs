@@ -1,0 +1,5 @@
+class Standard_Size(object):
+
+	def __init__(self
+self.raw_directory
+self.output_directory)

@@ -1,0 +1,75 @@
+cleans up and standardizes size 
+
+proper names for files 
+
+Raw to standardize pipeline (cleans and standardize images class
+
+self.raw_directory
+self.output_directory)
+
+
+def standardize(size):
+	do_standardize
+	put in directory
+
+def do_standardize(img, size):
+	does it output the right shape
+input model 
+(output directory)
+
+
+
+ML pipeline  - based on 
+
+separation of concerns!
+scrape
+download to proper directory
+standardize class - only take raw directory and resize 
+raise exception error if not the right size 
+
+
+ML pipeline 
+assumes standardized images 
+raise exception error if not the right size 
+
+build feature matirx & do feature engineering
+standard scaler 
+flatten then standard scaler - columnwise
+
+
+
+
+
+subtract mean columnwise and divide by variance
+
+check - assert size in preprocessing code 
+
+vary outputsize - maximize info gain 
+- pca 
+- reduce noise, prevent overfitting, maximize info gain
+
+- standard size as baseline 
+output size downsize 
+
+goal of  ml pipline
+feature scaling, normalization 
+build feature matrix 
+
+output from feat matrix 
+ filters before scaling
+ standardscaler after run filters 
+
+
+
+
+ for each image create feature vector for each label
+ list.append(feature_vector, label)
+ np.array (list of features)
+
+ feature vect - comes from filter transform & ravel
+ plot & see
+
+
+
+
+
