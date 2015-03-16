@@ -62,14 +62,15 @@
     </nav>
 
     <!-- Page Content -->
-    <div class="container">
-        <div class="row">
+    <div class="container fullheight">
+        <div class="row fullheight">
             <div class="col-md-6 col-sm-12">
-                <h1> Rustic Charm </h1>
-                <h2> Rustic {{ predictions.rustic }}%</h2>
-                <h2> Beach Chic {{ predictions.beach }}%</h2>
-                <h2> Ballroom Glam {{ predictions.ballroom }}%</h2> 
-            
+                <h1 class='title'> Rustic Charm </h1>
+            </div>
+            <div class='overlay fullheight col-md-3 col-md-offset-3'>
+                <div><span class='style'> RUSTIC</span><span class='stylescore'> {{ predictions.rustic }}%</span></div><br>
+                <div><span class='style'> BEACH CHIC</span><span class='stylescore'> {{ predictions.beach }}%</span></div><br>
+                <div><span class='style'> BALLROOM GLAM</span><span class='stylescore'> {{ predictions.ballroom }}%</span></div>
             </div>
         </div>
         <!-- /.row -->
