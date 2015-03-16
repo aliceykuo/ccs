@@ -43,31 +43,6 @@
                 <a class="navbar-brand" href="#"> Venue Recommendations</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
-                  <h3> Venue Recommendations</h3>
-      <div class="row">
-        <div class="col-lg-4">
-          <h3> </h3>
-          <img src="http://www.jetfeteblog.com/wp-content/uploads/2012/10/Dreams-Palm-Beach-Destination-Wedding.jpg" alt="Beach Recommendation" style="width:300px;height:300px">
-
-            <!--<img src="http://www.jetfeteblog.com/wp-content/uploads/2012/10/Dreams-Palm-Beach-Destination-Wedding.jpg" style= 'width: 10%;' alt="Beach Recommendation" style="width:300px;height:300px">-->
-          <!--<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>-->
-
-        </div>
-        <div class="col-lg-4">
-          <h2></h2>
-          <img src="http://www.jetfeteblog.com/wp-content/uploads/2012/10/Dreams-Palm-Beach-Destination-Wedding.jpg" alt="Beach Recommendation" style="width:300px;height:300px">
-          <!--<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>-->
-
-            <p></p>
-       </div>
-        <div class="col-lg-4">
-          <h2></h2>
-          <img src="http://www.jetfeteblog.com/wp-content/uploads/2012/10/Dreams-Palm-Beach-Destination-Wedding.jpg" alt="Beach Recommendation" style="width:300px;height:300px">
-          <!--<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>-->
-
-        </div>
-      </div>
-
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
@@ -87,13 +62,15 @@
     </nav>
 
     <!-- Page Content -->
-    <div class="container">
-        <div class="row">
+    <div class="container fullheight">
+        <div class="row fullheight">
             <div class="col-md-6 col-sm-12">
-                <h1> Beach Chic </h1>
-                <h2> Beach Chic {{ predictions.beach }}%</h2>
-                <h2> Rustic {{ predictions.rustic }}%</h2>
-                <h2> Ballroom Glam {{ predictions.ballroom }}%</h2>
+                <h1 class='title'> Beach Chic </h1>
+            </div>
+            <div class='overlay fullheight col-md-3 col-md-offset-3'>
+                <div><span class='style'> RUSTIC</span><span class='stylescore'> {{ predictions.rustic }}%</span></div><br>
+                <div><span class='style'> BEACH CHIC</span><span class='stylescore'> {{ predictions.beach }}%</span></div><br>
+                <div><span class='style'> BALLROOM GLAM</span><span class='stylescore'> {{ predictions.ballroom }}%</span></div>
             </div>
         </div>
         <!-- /.row -->
