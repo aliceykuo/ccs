@@ -20,7 +20,7 @@ def run_on_start(pkl_model_fname='static/rf_model.pkl'):
 
 def allowed_file(filename):
     return '.' in filename and \
-           filename.rsplit('.', 1)[1] in app.config['ALLOWED_EXTENSIONS']
+        filename.lower().rsplit('.', 1)[1] in app.config['ALLOWED_EXTENSIONS']
 
 @app.route('/')
 def index():
