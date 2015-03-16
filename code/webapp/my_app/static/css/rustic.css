@@ -8,9 +8,10 @@ body {
 	margin-top: 50px;
 	margin-bottom: 50px;
 	background: none;
+    font-family: 'News Cycle', sans-serif;
 }
 
-h1 {color:white;}
+h1, h2, h3 {color:white;}
 
 .full {
   background: url(../images/rustic3.jpg) no-repeat center center fixed;
