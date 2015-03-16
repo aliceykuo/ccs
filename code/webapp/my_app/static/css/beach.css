@@ -24,7 +24,7 @@ h1, h2, h3 {color:white;}
 }
 
 .overlay { 
-  background-color: rgba(0,0,0,.25);
+  background-color: rgba(0,0,0,.35);
   padding-top: 80px;
 }
 
