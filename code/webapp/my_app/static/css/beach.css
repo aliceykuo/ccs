@@ -4,14 +4,48 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+html, body {
+  height: 100%;
+}
+
+.fullheight {
+  height: 100%;
+}
+
 body {
-	margin-top: 50px;
-	margin-bottom: 50px;
-	background: none;
-    font-family: 'News Cycle', sans-serif;
+    background: none;
+  font-family: 'News Cycle', sans-serif;
 }
 
 h1, h2, h3 {color:white;}
+
+.title {
+  margin-top: 80px;
+}
+
+.overlay { 
+  background-color: rgba(0,0,0,.25);
+  padding-top: 80px;
+}
+
+.overlay h2 {
+  font-weight: 100;
+}
+
+.overlay .style {
+  color: white;
+  font-size: 1.325em;
+  transform: translate(0,0);
+  transition: transform .4s .2s,opacity .4s .2s ease;
+  font-weight: 100;
+  margin-right: 20px;
+}
+
+.overlay .stylescore {
+  color: white;
+  font-size: 1.225em;
+  font-weight: 100;
+}
 
 .full {
   background: url(../images/beach.jpg) no-repeat center center fixed;
