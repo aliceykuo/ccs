@@ -80,7 +80,7 @@ class ImageLoader(object):
 
 
     def segment_image(self, img_dim=(100, 100), n_segments=3):
-        # Make the segmented image parent folder if it does not already exist
+        # create segmented image parent folder if it does not already exist
         mkdir_p(self.segment_dir)
 
         for ith_img, tup in enumerate(self.img_label_pair):
