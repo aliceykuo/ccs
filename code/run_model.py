@@ -43,9 +43,7 @@ if __name__ == '__main__':
     # pkl_path1 = '/Users/kuoyen/Desktop/wedding/extract_patches25_500img_0310.pkl'
     pkl_path1 = '/Users/kuoyen/Desktop/wedding/extract_patches25_500img_scaled_0350.pkl'
 
-    # finished pickling ../images/pkl/mat_30_1000_nonscaled.pkl
-    # finished pickling ../images/pkl/mat_30_1000_stdscaled.pkl
-    # pkl_path2 = '/Users/kuoyen/Documents/myweddingstyle/images/pkl/mat_50_1000_stdscaler.pkl'
+
     df = pd.read_pickle(pkl_path1)
     X = df[:, 1:]
     y = df[:, 0:1]
@@ -53,6 +51,3 @@ if __name__ == '__main__':
     print X.shape
     print y.shape
     rf = random_forest(X, y.ravel())
-
-
-    # /Users/kuoyen/Desktop/wedding/extract_patches25_50img_1611.pkl

@@ -6,7 +6,7 @@ from skimage import io
 
 
 # img = cv2.imread('/Users/kuoyen/Desktop/beachsamp1.jpg')
-img = io.imread('/Users/kuoyen/Desktop/messi5.jpg')
+img = io.imread('/Users/kuoyen/Desktop/beach1.jpg')
 img.shape
 
 mask = np.zeros(img.shape[:2], np.uint8)

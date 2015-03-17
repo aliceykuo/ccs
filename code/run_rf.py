@@ -27,61 +27,62 @@ def pca(X):
     pca = RandomizedPCA(n_components=250)
     X = pca.fit_transform(X)
 
-def random_forest(X, y):
+def random_forest(X_train, X_test, y_train, y_test):
     # X_train, X_test, y_train, y_test = train_test_split(X, y)
     rf = RandomForestClassifier(n_estimators=500, n_jobs=-1)
-    mean_f1 = cross_val_score(rf, X, y, cv=5, scoring='f1').mean()
+    # mean_f1 = cross_val_score(rf, X, y, cv=5, scoring='f1').mean()
 
     rf = RandomForestClassifier(n_estimators=500, n_jobs=-1)
-    rf.fit(X, y)
-    pkl.dump(rf, open('rf_model_scaled_500.pkl', 'wb'))
+    rf.fit(X_train, y_train)
+    y_predict = rf.predict(X_test)
+    # pkl.dump(rf, open('rf_model_scaled_500.pkl', 'wb'))
     # rf.predict
-
+    print "rf f1:", f1_score(y_test, y_predict, average='weighted')
     # pkl.dump(rf, open('rf.pkl', 'wb'))
-    print "RANDOM FOREST F1:", mean_f1
-    return rf
+    # print "RANDOM FOREST F1:", mean_f1
+    # return rf
 
-# def logistic_regression(X_train, X_test, y_train, y_test):
-#     # X_train, X_test, y_train, y_test = train_test_split(X, y)
-#     lr = LogisticRegression(C=100)
-#     lr.fit(X_train, y_train)
-#     probabilities = lr.predict_proba(X_test)[:]
-#     y_predict = lr.predict(X_test)
-#     # print probabilities
-#     # print "lr precision:", precision_score(y_test, y_predict)
-#     # print "lr recall:", recall_score(y_test, y_predict)
-#     print "lr f1:", f1_score(y_test, y_predict, average='weighted')
-#     return lr
-#
-#
-# def svm(X_train, X_test, y_train, y_test):
-#     svm = SVC(kernel='linear')
-#     svm.fit(X_train, y_train)
-#     # probabilities = svm.predict_proba(X_test)[:]
-#     y_predict = svm.predict(X_test)
-#
-#     # print "svm precision:", precision_score(y_test, y_predict)
-#     # print "svm recall:", recall_score(y_test, y_predict)
-#     print "svm f1:", f1_score(y_test, y_predict, average='weighted')
-#
-# def knn(X_train, X_test, y_train, y_test):
-#     knn = KNeighborsClassifier()
-#     knn.fit(X_train, y_train)
-#     y_predict = knn.predict(X_test)
-#
-#     # print "knn precision:", precision_score(y_test, y_predict)
-#     # print "knn recall:", recall_score(y_test, y_predict)
-#     print "knn f1:", f1_score(y_test, y_predict, average='weighted')
-#
-# def gradient_descent(X_train, X_test, y_train, y_test):
-#     sgd = SGDClassifier()
-#     sgd.fit(X_train, y_train)
-#     # probabilities = sgd.predict_proba(X_test)[:]
-#     y_predict = sgd.predict(X_test)
-#
-#     # print "sgd precision:", precision_score(y_test, y_predict)
-#     # print "sgd recall:", recall_score(y_test, y_predict)
-#     print "sgd f1:", f1_score(y_test, y_predict, average='weighted')
+def logistic_regression(X_train, X_test, y_train, y_test):
+    # X_train, X_test, y_train, y_test = train_test_split(X, y)
+    lr = LogisticRegression(C=100)
+    lr.fit(X_train, y_train)
+    probabilities = lr.predict_proba(X_test)[:]
+    y_predict = lr.predict(X_test)
+    # print probabilities
+    # print "lr precision:", precision_score(y_test, y_predict)
+    # print "lr recall:", recall_score(y_test, y_predict)
+    print "lr f1:", f1_score(y_test, y_predict, average='weighted')
+    return lr
+
+
+def svm(X_train, X_test, y_train, y_test):
+    svm = SVC(kernel='linear')
+    svm.fit(X_train, y_train)
+    # probabilities = svm.predict_proba(X_test)[:]
+    y_predict = svm.predict(X_test)
+
+    # print "svm precision:", precision_score(y_test, y_predict)
+    # print "svm recall:", recall_score(y_test, y_predict)
+    print "svm f1:", f1_score(y_test, y_predict, average='weighted')
+
+def knn(X_train, X_test, y_train, y_test):
+    knn = KNeighborsClassifier()
+    knn.fit(X_train, y_train)
+    y_predict = knn.predict(X_test)
+
+    # print "knn precision:", precision_score(y_test, y_predict)
+    # print "knn recall:", recall_score(y_test, y_predict)
+    print "knn f1:", f1_score(y_test, y_predict, average='weighted')
+
+def gradient_descent(X_train, X_test, y_train, y_test):
+    sgd = SGDClassifier()
+    sgd.fit(X_train, y_train)
+    # probabilities = sgd.predict_proba(X_test)[:]
+    y_predict = sgd.predict(X_test)
+
+    # print "sgd precision:", precision_score(y_test, y_predict)
+    # print "sgd recall:", recall_score(y_test, y_predict)
+    print "sgd f1:", f1_score(y_test, y_predict, average='weighted')
 #
 # def onevsrest(X_train, X_test, y_train, y_test):
 #     onevsrest = OneVsRestClassifier(LinearSVC(random_state=0))
@@ -116,8 +117,9 @@ def random_forest(X, y):
 # print sum(f1_scores) / len(f1_scores)
 
 if __name__ == '__main__':
-    # pkl_path1 = '/Users/kuoyen/Documents/myweddingstyle/images/pkl/mat_50_1000_minmaxscaler.pkl'
-    pkl_path1 = '/Users/kuoyen/Desktop/wedding/extract_patches25_500img_scaled_0350.pkl'
+    # pkl_path1 =/ '/Users/kuoyen/Documents/myweddingstyle/images/pkl/mat_50_1000_minmaxscaler.pkl'
+    pkl_path1 = '/Volumes/Main/extract_patches25_500img_scaled_0350.pkl'
+    # pkl_path1 = '/Users/kuoyen/Desktop/wedding/extract_patches25_500img__pruned__hist_2244.pkl'
     # pkl_path1 = '/Users/kuoyen/Desktop/wedding/extract_patches_1000img_0437.pkl'
 
     # finished pickling ../images/pkl/mat_30_1000_nonscaled.pkl
@@ -129,12 +131,14 @@ if __name__ == '__main__':
 
     print X.shape
     print y.shape
-    rf = random_forest(X, y.ravel())
+
+    X_train, X_test, y_train, y_test = train_test_split(X, y)
+    # rf = random_forest(X_train, X_test, y_train, y_test)
     # pkl.dump(rf, open('model/baseline.pkl', 'wb'))
-    # lr = logistic_regression(X_train, X_test, y_train, y_test)
-    # svm = svm(X_train, X_test, y_train, y_test)
+    lr = logistic_regression(X_train, X_test, y_train, y_test)
+    svm = svm(X_train, X_test, y_train, y_test)
     # knn(X_train, X_test, y_train, y_test)
-    # gradient_descent(X_train, X_test, y_train, y_test)
+    gradient_descent(X_train, X_test, y_train, y_test)
     # onevsrest(X_train, X_test, y_train, y_test)
 
     # grid = {'max_depth': [5, None], 
