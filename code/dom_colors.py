@@ -1,5 +1,3 @@
-__author__ = 'kuoyen'
-
 import scipy
 from PIL import Image
 from scipy.cluster.vq import vq
@@ -90,12 +88,9 @@ class DominantColor(object):
                 if ith_file == 0 or ith_file % 1000 == 0:
                     print 'Completed', ith_file
                 img_dom_colors = self._seg_dom_color(fname_tup, k, ncolor)
-                # print img_dom_colors
                 append = np.array(img_dom_colors).ravel()[np.newaxis, :]
                 all_color_lst.append(append)
-                #break point condition: np.shape(append)[1] != 27
 
-        # print all_color_lst
         all_color_mat = np.concatenate(all_color_lst, axis=0)
         star(30)
         print 'DONE!!!!', all_color_mat.shape
