@@ -2,12 +2,19 @@ from skimage import io
 import pandas as pd
 import numpy as np
 import os
-from skimage import io
 from skimage.transform import resize, downscale_local_mean
 
-class StandardizeSize(object):
 
-    def __init__(self, path='/Users/kuoyen/Documents/myweddingstyle/images', raw_dir='raw', uniform_dir='uniform_100_v2'):
+class StandardizeSize(object):
+    '''
+            DOC: The StandardizeSize class does the following:
+            1. Copies the directory structure of the "raw" image directory.
+            2. Resizes each image and saves them in the corresponding
+               "uniform" subdirectory.
+    '''
+
+    def __init__(self, path='/Users/kuoyen/Documents/myweddingstyle/images',
+                        raw_dir='raw', uniform_dir='uniform_100_v2'):
         self.raw_dir_path = os.path.join(path, raw_dir)
         self.uniform_dir_path = os.path.join(path, uniform_dir)
         self.raw_subdirs = os.listdir(self.raw_dir_path)
@@ -15,8 +22,11 @@ class StandardizeSize(object):
             os.mkdir(self.uniform_dir_path) 
 
     def copy_directory(self):
-        '''Create a copy of the raw image directory. Check to see if it already 
-         exists. Same naming convention except with "uniform" appended to dir name. '''
+        '''
+        Create a copy of the raw image directory. Check to see if it
+        already exists. Preserves the same naming convention as the raw
+        image directory except that the root directory is "uniform".
+        '''
         for raw_subdir in self.raw_subdirs:
             uniform_subdir = os.path.join(self.uniform_dir_path, raw_subdir)
             if not os.path.isdir(uniform_subdir):
@@ -52,4 +62,3 @@ if __name__ == '__main__':
     ss = StandardizeSize()
     ss.copy_directory()
     print ss.standardize(n=1000)
-    # print io.imread('/Users/kuoyen/Documents/myweddingstyle/images/uniform/beach/beach100.jpg')
