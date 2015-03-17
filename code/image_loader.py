@@ -1,14 +1,18 @@
-
 from skimage import io
 import os
 from helper import mkdir_p, write_image
 
-
 class ImageLoader(object):
-    def __init__(self, root_dir='.', img_num=5, segment=True, img_callback=write_image):
+    def __init__(self, root_dir='.', img_num=5, segment=False,
+                        img_callback=write_image):
         """
         :param root_dir: Parent dir of raw image files
         :param img_num: Number of images run per category (beach / rustic)
+
+        DOC: The ImageLoader class does the following:
+            1. Creates a master list with all the image file names.
+            2. Reads in standardized images and converts them into numpy arrays
+            3. Segments images (if segment=True) and saves image segments
         """
         self.root_dir = root_dir
         self.segment_dir = '%s_segment' % root_dir
@@ -24,14 +28,14 @@ class ImageLoader(object):
         self.img_callback = img_callback
 
     def get_immediate_subdirectories(self, a_dir):
-        """Returning file names within dir"""
+        """Returns file names within a given directory"""
         return [name for name in os.listdir(a_dir)
                 if os.path.isdir(os.path.join(a_dir, name))]
 
     def all_image_paths(self):
         """
-        Go into subdirectory of the category (beach /rustic) and return all the filenames
-        and category for each subdir
+        Go into subdirectory of the category (beach /rustic) and return
+        all the file names and category for each subdir
         """
         self.labels = [i for i in (self.get_immediate_subdirectories(self.root_dir))
                        if not i.startswith('.')]
@@ -52,32 +56,33 @@ class ImageLoader(object):
 
     def load_images(self, img_dim=(100, 100), n_segments=3):
         """
-        Return a tuple containing list of pairs of: numpy array and integer label
+        Returns a tuple containing a list of pairs of: numpy
+        array and integer label.
         """
         self.all_image_paths()
         print "number of files processing", len(self.all_files)
+
         label_ints = {}
         # change label list to label_ints dictionary
         for i in xrange(len(self.labels)):
             # ie. { 'beach': 0, 'rustic': 1 }
             label_ints[self.labels[i]] = i
-        self.label_vector = []
+
         # Processing raw file (not segmented)
+        self.label_vector = []
         for file_img in self.all_files:
-            # path = /Users/kuoyen/Documents/capstone/images/uniform/ballroom/ballroom0.jpg
-            #/Users/kuoyen/Documents/capstone/images/uniform/ballroom/ballroom0.jpg
             img = self.load_image(file_img)
             label = self.get_label(file_img)
             label_int = label_ints[label]
             self.label_vector.append(label_int)
-            self.img_label_pair.append((img, label_int))  # list of tuples of (np.array, int_label)
+             # list of tuples of (np.array, int_label)
+            self.img_label_pair.append((img, label_int))
         print "completed load_images (without segmenting)"
 
-        # Segment images and store in new directory if necessary
+        # Segmented images and store in new directory if necessary
         if self.segment:
             self.segment_image(img_dim=img_dim, n_segments=n_segments)
         print "completed load_images (with segmenting)"
-
 
     def segment_image(self, img_dim=(100, 100), n_segments=3):
         # create segmented image parent folder if it does not already exist
@@ -103,7 +108,6 @@ class ImageLoader(object):
                 segmented_filenames.append(seg_fname)
                 self.img_callback(seg, seg_fname)
             self.all_seg_files.append(segmented_filenames)
-
 
 if __name__ == '__main__':
     il = ImageLoader(root_dir='/Users/kuoyen/Documents/myweddingstyle/images/uniform_100',
