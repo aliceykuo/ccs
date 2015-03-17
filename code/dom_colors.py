@@ -9,6 +9,13 @@ from helper import star
 
 
 class DominantColor(object):
+    '''
+    DOC:
+    DominantColor uses kmeans to extract the most dominant colors
+    from an image. There are two variations of how this file can run:
+        1.) One image dominant colors extraction
+        2.) Segmented images dominant colors extraction
+    '''
 
     def __init__(self, img_num, root_dir='/Users/kuoyen/Documents/myweddingstyle/images/uniform_100'):
         il = ImageLoader(root_dir, img_num=img_num, segment=False)
@@ -28,11 +35,11 @@ class DominantColor(object):
         codes, dist = scipy.cluster.vq.kmeans(ar, k)
         vecs, dist = scipy.cluster.vq.vq(ar, codes)         # assign codes
         counts, bins = scipy.histogram(vecs, len(codes))    # count occurrences
-        index_top = scipy.argsort(counts)[:-8:-1]           # find most frequent in desc order
-        # print "length of ncolor", len(index_top)
+        index_top = scipy.argsort(counts)[: (ncolor+1):-1]  # find most frequent in desc order
         img_dom_colors = []
         for i in codes[index_top]:
             img_dom_colors.append(i)
+            # to see hex colors, uncomment the next two lines:
             # colour = ''.join(chr(c) for c in i).encode('hex')
             # print 'most frequent is %s (#%s)' % (i, colour)
         dom_colors.append(img_dom_colors)
@@ -40,7 +47,8 @@ class DominantColor(object):
         return dom_colors
 
     def _seg_dom_color(self, fname_tup, k, ncolor):
-        """Return all the dom colors in all the fnames as a 0 dimensional array"""
+        '''Return all the dominant colors for all fname (filenames)
+           as a 0 dimensional array.'''
         all_seg_dom_colors = []
         for fname in fname_tup:
             # Get dom color
@@ -52,7 +60,7 @@ class DominantColor(object):
 
     @staticmethod
     def _reshape_segment(seg_dom_colors, ncolor):
-        """Make sure the dom color is of certain shape"""
+        ''' Makes sure that dominant colors has the correct dimentions. '''
         seg_dom_colors = seg_dom_colors[0]
         num_seg_colors = len(seg_dom_colors)
         if num_seg_colors != ncolor and num_seg_colors:
@@ -69,12 +77,12 @@ class DominantColor(object):
         return seg_dom_colors
 
     def run_dom_colors(self, k, ncolor, segment, pkl_fname):
-        """
-        :param k:
-        :param ncolor:
+        '''
+        :param k: the number of clusters
+        :param ncolor: the number of top colors to extract
         :param segment: BOOLEAN if you wanna run dom color on segments of an image or not
         :return:
-        """
+        '''
         all_color_lst = []
         if not segment:
             for ith_file, fname in enumerate(self.all_files):
@@ -93,7 +101,6 @@ class DominantColor(object):
 
         all_color_mat = np.concatenate(all_color_lst, axis=0)
         star(30)
-        print 'DONE!!!!', all_color_mat.shape
         star(30)
         pkl.dump(all_color_mat, open(pkl_fname, 'wb'))
         return all_color_mat
@@ -101,7 +108,6 @@ class DominantColor(object):
 if __name__ == '__main__':
     dc = DominantColor(1000)
     dc.run_dom_colors(10, 7, False, 'raw_dom_color.pkl')
-    # dc.run_dom_colors(5, 3, True, 'seg_dom_color.pkl')
-
+    dc.run_dom_colors(5, 3, True, 'seg_dom_color.pkl')
 
 
