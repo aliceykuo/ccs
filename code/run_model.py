@@ -22,12 +22,8 @@ from sklearn.naive_bayes import MultinomialNB
 
 def random_forest(X, y):
     # X_train, X_test, y_train, y_test = train_test_split(X, y)
-    rf = RandomForestClassifier(n_estimators=50, n_jobs=-1)
-    mean_f1 = cross_val_score(rf, X, y, cv=5, scoring='f1').mean()
 
-    rf = RandomForestClassifier(n_estimators=50, n_jobs=-1)
-    rf.fit(X, y)
-    pkl.dump(rf, open('/Users/kuoyen/Desktop/wedding/rf_model_scaled_500.pkl', 'wb'))
+
     # rf.predict
 
     # pkl.dump(rf, open('rf.pkl', 'wb'))

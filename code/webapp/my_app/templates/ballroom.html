@@ -26,12 +26,26 @@
     <div class="container fullheight">
         <div class="row fullheight">
             <div class="col-md-6 col-sm-12">
-                <h1 class='title'>Ballroom Glam</h1>
+                <h1 class='title'>BALLROOM GLAM</h1>
             </div>
-            <div class='overlay fullheight col-md-3 col-md-offset-3'>
-                <div><span class='style'> BALLROOM GLAM</span><span class='stylescore'> {{ predictions.ballroom }}%</span></div>
-                <div><span class='style'> RUSTIC CHARM</span><span class='stylescore'> {{ predictions.rustic }}%</span></div><br>
-                <div><span class='style'> BEACH CHIC</span><span class='stylescore'> {{ predictions.beach }}%</span></div><br>
+            <div class='overlay fullheight col-md-4 col-md-offset-2'>
+                <div><span class='style'> BALLROOM GLAM</span>
+                    <span class='stylescore'> {{ predictions.ballroom }}%</span></div> <br>
+
+                <div><span class='style'> RUSTIC CHARM</span>
+                    {% if 'rustic' in predictions %} 
+                        <span class='stylescore'> {{ predictions.rustic }}%</span></div><br>
+                    {% else %}
+                        <span class='stylescore'> 0%</span>
+                    {% endif %}</div> <br>
+
+                <div><span class='style'> BEACH CHIC</span>
+                    {% if 'beach' in predictions %} 
+                        <span class='stylescore'> {{ predictions.beach }}%</span></div><br>
+                    {% else %}
+                        <span class='stylescore'> 0%</span> 
+                    {% endif %}
+                </div><br>
             </div>
                 
         </div>

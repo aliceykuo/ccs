@@ -34,7 +34,7 @@ h1, h2, h3 {color:white;}
 
 .overlay .style {
   color: white;
-  font-size: 1.325em;
+  font-size: 1.3em;
   transform: translate(0,0);
   transition: transform .4s .2s,opacity .4s .2s ease;
   font-weight: 100;
@@ -43,7 +43,7 @@ h1, h2, h3 {color:white;}
 
 .overlay .stylescore {
   color: white;
-  font-size: 1.225em;
+  font-size: 1.2em;
   font-weight: 100;
 }
 

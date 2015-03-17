@@ -69,8 +69,22 @@
             </div>
             <div class='overlay fullheight col-md-3 col-md-offset-3'>
                 <div><span class='style'> RUSTIC CHARM</span><span class='stylescore'> {{ predictions.rustic }}%</span></div><br>
-                <div><span class='style'> BEACH CHIC</span><span class='stylescore'> {{ predictions.beach }}%</span></div><br>
-                <div><span class='style'> BALLROOM GLAM</span><span class='stylescore'> {{ predictions.ballroom }}%</span></div>
+
+                <div><span class='style'> BEACH CHIC</span>
+                    {% if 'beach' in predictions %} 
+                        <span class='stylescore'> {{ predictions.beach }}%</span></div><br>
+                    {% else %}
+                        <span class='stylescore'> 0%</span> 
+                    {% endif %}
+
+                
+                <div><span class='style'> BALLROOM GLAM</span>
+                    {% if 'ballroom' in predictions %} 
+                        <span class='stylescore'> {{ predictions.ballroom }}%</span>
+                    {% else %}
+                        <span class='stylescore'> 0%</span> 
+                    {% endif %}
+                </div>
             </div>
         </div>
         <!-- /.row -->
