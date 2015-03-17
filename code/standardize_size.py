@@ -15,14 +15,14 @@ class StandardizeSize(object):
             os.mkdir(self.uniform_dir_path) 
 
     def copy_directory(self):
-        # '''Objective: Make a copy of the raw image directory. check to see if it already \
-        #     exists. Same naming convention except with "uniform" appended to dir name. '''
+        '''Create a copy of the raw image directory. Check to see if it already 
+         exists. Same naming convention except with "uniform" appended to dir name. '''
         for raw_subdir in self.raw_subdirs:
             uniform_subdir = os.path.join(self.uniform_dir_path, raw_subdir)
             if not os.path.isdir(uniform_subdir):
                 os.mkdir(uniform_subdir)
 
-    def standardize(self, n=10, size=(100, 100)):
+    def standardize(self, n=1000, size=(100, 100)):
         print "standardizing to:", size 
         raw_img_subdir = []
         for raw_subdir in self.raw_subdirs: 
@@ -32,8 +32,7 @@ class StandardizeSize(object):
             uniform_subdir = os.path.join(self.uniform_dir_path, i)
             self.raw_subdir_path = os.path.join(self.raw_dir_path, i)
             self.raw_sub = os.listdir(self.raw_subdir_path)
-            self.raw_sub = self.raw_sub[:1050] ###################################hard coded 
-            # print len(self.raw_sub) ####
+            self.raw_sub = self.raw_sub[:n]  
             for ith_image, file_img in enumerate(self.raw_sub): 
                 if 'jpg' in file_img:   
                     std_img = self.run_standardize_img(file_img, size)
@@ -47,7 +46,7 @@ class StandardizeSize(object):
             std_img = resize(img, size)
             return std_img
         else:
-            print 'Image is not colored: ', file_img
+            print 'Image is black and white: ', file_img
         
 if __name__ == '__main__':
     ss = StandardizeSize()
