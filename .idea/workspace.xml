@@ -2,144 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4fe7461a-ca2e-46f1-ab57-2e6bb86bea90" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Final Project Proposal.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Initial Proposals" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Untitled0.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Untitled1.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/beach_data.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/ML_pre_process.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/Untitled0.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/Untitled1.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/Untitled2.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/Untitled3.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/backup_3.10.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/backup_3.9.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/baseline_lg.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/baseline_rf.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/extract_patches.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/filters.ipynb_uniform/.ipynb_checkpoints/Untitled1-checkpoint.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/filters.ipynb_uniform/.ipynb_checkpoints/bkground-checkpoint.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/filters.ipynb_uniform/.ipynb_checkpoints/dom colors-checkpoint.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/filters.ipynb_uniform/.ipynb_checkpoints/equalized_histogram-checkpoint.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/filters.ipynb_uniform/.ipynb_checkpoints/grabcut-checkpoint.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/filters.ipynb_uniform/.ipynb_checkpoints/local_binary_pattern-checkpoint.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/filters.ipynb_uniform/.ipynb_checkpoints/log_proba-checkpoint.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/filters.ipynb_uniform/.ipynb_checkpoints/multi_log-checkpoint.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/filters.ipynb_uniform/.ipynb_checkpoints/rf_model-checkpoint.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/filters.ipynb_uniform/.ipynb_checkpoints/segmentation-checkpoint.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/filters.ipynb_uniform/.ipynb_checkpoints/sift-checkpoint.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/filters.ipynb_uniform/.ipynb_checkpoints/texture-checkpoint.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/filters.ipynb_uniform/.ipynb_checkpoints/whiten_hist-checkpoint.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/filters.ipynb_uniform/Untitled1.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/filters.ipynb_uniform/bkground.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/filters.ipynb_uniform/dom colors.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/filters.ipynb_uniform/equalized_histogram.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/filters.ipynb_uniform/grabcut.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/filters.ipynb_uniform/kmeans_color.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/filters.ipynb_uniform/local_binary_pattern.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/filters.ipynb_uniform/log_proba.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/filters.ipynb_uniform/multi_log.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/filters.ipynb_uniform/rf_model.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/filters.ipynb_uniform/segmentation.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/filters.ipynb_uniform/sift.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/filters.ipynb_uniform/texture.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/filters.ipynb_uniform/whiten_hist.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/img_transform.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/kmeans_color.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/load_file.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/load_file_rev.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/load_file_segments.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/load_file_sift.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/loading_data.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/loading_data_short.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/ml_pipeline.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/patches.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/pre_process.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/preprocessing_img.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/problems.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/rf_model_pkl.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/run_pipeline.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/segments.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/sift_model.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/standardize size.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/standardize_size" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/temp_load_file.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/webapp/my_app/hello_bootstrap/app.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/webapp/my_app/hello_bootstrap/static/css/bootstrap-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/webapp/my_app/hello_bootstrap/static/css/bootstrap-theme.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/webapp/my_app/hello_bootstrap/static/css/bootstrap-theme.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/webapp/my_app/hello_bootstrap/static/css/bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/webapp/my_app/hello_bootstrap/static/css/bootstrap.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/webapp/my_app/hello_bootstrap/static/css/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/webapp/my_app/hello_bootstrap/static/css/grid.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/webapp/my_app/hello_bootstrap/static/fonts/glyphicons-halflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/webapp/my_app/hello_bootstrap/static/fonts/glyphicons-halflings-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/webapp/my_app/hello_bootstrap/static/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/webapp/my_app/hello_bootstrap/static/fonts/glyphicons-halflings-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/webapp/my_app/hello_bootstrap/static/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/webapp/my_app/hello_bootstrap/static/js/bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/webapp/my_app/hello_bootstrap/static/js/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/webapp/my_app/hello_bootstrap/static/js/npm.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/webapp/my_app/hello_bootstrap/templates/examples/blog/blog.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/webapp/my_app/hello_bootstrap/templates/examples/blog/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/webapp/my_app/hello_bootstrap/templates/examples/carousel/carousel.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/webapp/my_app/hello_bootstrap/templates/examples/carousel/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/webapp/my_app/hello_bootstrap/templates/examples/cover/cover.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/webapp/my_app/hello_bootstrap/templates/examples/cover/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/webapp/my_app/hello_bootstrap/templates/examples/dashboard/dashboard.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/webapp/my_app/hello_bootstrap/templates/examples/dashboard/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/webapp/my_app/hello_bootstrap/templates/examples/grid/grid.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/webapp/my_app/hello_bootstrap/templates/examples/grid/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/webapp/my_app/hello_bootstrap/templates/examples/jumbotron-narrow/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/webapp/my_app/hello_bootstrap/templates/examples/jumbotron-narrow/jumbotron-narrow.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/webapp/my_app/hello_bootstrap/templates/examples/jumbotron/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/webapp/my_app/hello_bootstrap/templates/examples/jumbotron/jumbotron.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/webapp/my_app/hello_bootstrap/templates/examples/navbar-fixed-top/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/webapp/my_app/hello_bootstrap/templates/examples/navbar-fixed-top/navbar-fixed-top.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/webapp/my_app/hello_bootstrap/templates/examples/navbar-static-top/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/webapp/my_app/hello_bootstrap/templates/examples/navbar-static-top/navbar-static-top.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/webapp/my_app/hello_bootstrap/templates/examples/navbar/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/webapp/my_app/hello_bootstrap/templates/examples/navbar/navbar.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/webapp/my_app/hello_bootstrap/templates/examples/non-responsive/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/webapp/my_app/hello_bootstrap/templates/examples/non-responsive/non-responsive.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/webapp/my_app/hello_bootstrap/templates/examples/offcanvas/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/webapp/my_app/hello_bootstrap/templates/examples/offcanvas/offcanvas.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/webapp/my_app/hello_bootstrap/templates/examples/offcanvas/offcanvas.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/webapp/my_app/hello_bootstrap/templates/examples/signin/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/webapp/my_app/hello_bootstrap/templates/examples/signin/signin.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/webapp/my_app/hello_bootstrap/templates/examples/starter-template/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/webapp/my_app/hello_bootstrap/templates/examples/starter-template/starter-template.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/webapp/my_app/hello_bootstrap/templates/examples/sticky-footer-navbar/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/webapp/my_app/hello_bootstrap/templates/examples/sticky-footer-navbar/sticky-footer-navbar.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/webapp/my_app/hello_bootstrap/templates/examples/sticky-footer/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/webapp/my_app/hello_bootstrap/templates/examples/sticky-footer/sticky-footer.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/webapp/my_app/hello_bootstrap/templates/examples/theme/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/webapp/my_app/hello_bootstrap/templates/examples/theme/theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/webapp/my_app/hello_bootstrap/templates/examples/tooltip-viewport/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/webapp/my_app/hello_bootstrap/templates/examples/tooltip-viewport/tooltip-viewport.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/webapp/my_app/hello_bootstrap/templates/examples/tooltip-viewport/tooltip-viewport.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/webapp/my_app/hello_bootstrap/templates/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/webapp/my_app/hello_bootstrap/templates/jumbotron.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/webapp/my_app/zack.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code/whiten.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ipython_notebook/Untitled0.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ipython_notebook/Untitled1.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ipython_notebook/filters.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ipython_notebook/img_dir.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ipython_notebook/jt's code.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ipython_notebook/merge_df.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ipython_notebook/poc.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/kmeans.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/kmeans_cv2.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/notes/pipeline" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/notes/sensory_neural_network.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/notes/standardizesize_notes" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project_proposal" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proposal_draft" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/to_do_list.md" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/background.py" afterPath="$PROJECT_DIR$/code/background.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/run_model.py" afterPath="$PROJECT_DIR$/code/run_model.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/run_rf.py" afterPath="$PROJECT_DIR$/code/run_rf.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/code/ReadMe.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/code/background.py" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/webapp/my_app/extract_patches.py" afterPath="$PROJECT_DIR$/code/webapp/my_app/extract_patches.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/webapp/my_app/helper.py" afterPath="$PROJECT_DIR$/code/webapp/my_app/helper.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/webapp/my_app/webapp.py" afterPath="$PROJECT_DIR$/code/webapp/my_app/webapp.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="myweddingstyle.iws" />
@@ -163,16 +30,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="beach_result.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/code/webapp/my_app/templates/beach_result.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1395">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="beach.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/code/webapp/my_app/templates/beach.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -183,31 +40,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ballroom.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/code/webapp/my_app/static/css/ballroom.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.0" vertical-offset="30" max-vertical-offset="930">
-              <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="beach.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/code/webapp/my_app/static/css/beach.css">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-4.44" vertical-offset="339" max-vertical-offset="915">
               <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="webapp.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/code/webapp/my_app/webapp.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.6153846" vertical-offset="2250" max-vertical-offset="2835">
-              <caret line="158" column="47" selection-start-line="158" selection-start-column="47" selection-end-line="158" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -226,9 +63,21 @@
       <file leaf-file-name="rustic.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/code/webapp/my_app/templates/rustic.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4787234" vertical-offset="780" max-vertical-offset="1620">
-              <caret line="70" column="6" selection-start-line="70" selection-start-column="6" selection-end-line="85" selection-end-column="31" />
+            <state vertical-scroll-proportion="0.39893618" vertical-offset="330" max-vertical-offset="1620">
+              <caret line="37" column="66" selection-start-line="37" selection-start-column="66" selection-end-line="37" selection-end-column="66" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="extract_patches.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/code/webapp/my_app/extract_patches.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.0384617" vertical-offset="0" max-vertical-offset="825">
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="11" selection-end-column="7" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -281,12 +130,17 @@
         <option value="$PROJECT_DIR$/code/webapp/my_app/templates/rustic.html" />
         <option value="$PROJECT_DIR$/code/webapp/my_app/static/css/ballroom.css" />
         <option value="$PROJECT_DIR$/code/webapp/my_app/templates/ballroom.html" />
+        <option value="$PROJECT_DIR$/code/webapp/my_app/helper.py" />
+        <option value="$PROJECT_DIR$/code/webapp/my_app/extract_patches.py" />
+        <option value="$PROJECT_DIR$/code/extract_patches.py" />
+        <option value="$PROJECT_DIR$/code/filters.py" />
+        <option value="$PROJECT_DIR$/code/helper.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-7" />
-    <option name="y" value="135" />
+    <option name="x" value="11" />
+    <option name="y" value="50" />
     <option name="width" value="1275" />
     <option name="height" value="747" />
   </component>
@@ -502,7 +356,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/code/webapp/my_app/webapp.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/code/helper.py" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="tests" factoryName="py.test">
@@ -641,14 +495,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="135" width="1275" height="747" extended-state="0" />
+    <frame x="11" y="50" width="1275" height="747" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24941176" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24941176" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -693,8 +547,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/code/webapp/my_app/webapp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.6153846" vertical-offset="2250" max-vertical-offset="2835">
-          <caret line="158" column="47" selection-start-line="158" selection-start-column="47" selection-end-line="158" selection-end-column="47" />
+        <state vertical-scroll-proportion="-4.6153846" vertical-offset="2280" max-vertical-offset="2850">
+          <caret line="160" column="47" selection-start-line="160" selection-start-column="47" selection-end-line="160" selection-end-column="47" />
           <folding />
         </state>
       </provider>
@@ -763,10 +617,60 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/code/extract_patches.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.5973377" vertical-offset="0" max-vertical-offset="1050">
+          <caret line="64" column="17" selection-start-line="64" selection-start-column="17" selection-end-line="64" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#18#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/webapp/my_app/extract_patches.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.0384617" vertical-offset="0" max-vertical-offset="825">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="11" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/webapp/my_app/helper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44925123" vertical-offset="0" max-vertical-offset="601">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#9#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/filters.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24958402" vertical-offset="0" max-vertical-offset="1350">
+          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#18#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/helper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0232946" vertical-offset="0" max-vertical-offset="705">
+          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/code/webapp/my_app/templates/rustic.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4787234" vertical-offset="780" max-vertical-offset="1620">
-          <caret line="70" column="6" selection-start-line="70" selection-start-column="6" selection-end-line="85" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.39893618" vertical-offset="330" max-vertical-offset="1620">
+          <caret line="37" column="66" selection-start-line="37" selection-start-column="66" selection-end-line="37" selection-end-column="66" />
           <folding />
         </state>
       </provider>

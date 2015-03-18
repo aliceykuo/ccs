@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html class="full" lang="en">
+<!-- Make sure the <html> tag is set to the .full CSS class. Change the background image in the full.css file. -->
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>The Big Picture - Start Bootstrap Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../static/css/ballroom.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Page Content -->
+    <div class="container fullheight">
+        <div class="row fullheight">
+            <div class="col-md-6 col-sm-12">
+                <h1 class='title'>BALLROOM GLAM</h1>
+            </div>
+            <div class='overlay fullheight col-md-4 col-md-offset-2'>
+                <div><span class='style'> BALLROOM GLAM</span>
+                    <span class='stylescore'> {{ predictions.ballroom }}%</span></div> <br>
+
+                <div><span class='style'> RUSTIC CHARM</span>
+                    {% if 'rustic' in predictions %} 
+                        <span class='stylescore'> {{ predictions.rustic }}%</span></div><br>
+                    {% else %}
+                        <span class='stylescore'> 0%</span>
+                    {% endif %}</div> <br>
+
+                <div><span class='style'> BEACH CHIC</span>
+                    {% if 'beach' in predictions %} 
+                        <span class='stylescore'> {{ predictions.beach }}%</span></div><br>
+                    {% else %}
+                        <span class='stylescore'> 0%</span> 
+                    {% endif %}
+                </div><br>
+            </div>
+                
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="../static/js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../static/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
