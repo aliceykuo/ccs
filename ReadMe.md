@@ -18,12 +18,12 @@ raw images.
 
 #####image_loader.py
 * The ImageLoader class does the following:
-    1. Creates a master list with all the image files names
-    2. Reads in standardized images and converts them into numpy arrays
-    3. Segments images and saves image segments
+    1.) Creates a master list with all the image files names\
+    2.) Reads in standardized images and converts them into numpy arrays
+    3.) Segments images and saves image segments
 
 
-###Part II: Exploratory Data Analysis
+###Part II: EDA & Feature Extraction
 
 #####dom_colors.py
 * The class DominantColor uses kmeans to extract the most dominant colors
