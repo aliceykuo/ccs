@@ -1,7 +1,12 @@
-#My Wedding Style: A  Wedding Image Classifier
+##My Wedding Style: A  Wedding Image Classifier
 
+###Overview
+A lot of women spend a great deal of time on Pinterest looking for ideas for their wedding. While it is a
+great source of inspiration, the patterns that emerge from Pinterest Boards are not always obvious. I
+built an image classifier that identifies the leading trend by analyzing an album of wedding images and
+grouping them into one of three styles (beach, rustic, or ballroom).
 
-##Part I: Preprocessing
+###Part I: Preprocessing
 
 #####loading_data.py
 * This takes a csv file and loads all fields into a PostGRES database, and saves the raw images into the correct label directory.
@@ -18,7 +23,7 @@ raw images.
     3. Segments images and saves image segments
 
 
-##Part II: Exploratory Data Analysis
+###Part II: Exploratory Data Analysis
 
 #####dom_colors.py
 * The class DominantColor uses kmeans to extract the most dominant colors
@@ -44,13 +49,13 @@ raw images.
 #####helper.py
 * This file contains general functions used across the board.
 
-##Part III: Model
+###Part III: Model
 
 #####run_model.py
 * This file contains all the models that were tested to determine most effective classification method.
 
 
-##Part IV: Web App
+###Part IV: Web App
 
 #####webapp.py
 * The folder webapp conatins the whole Flask webapp that allows users to upload an image and obtain a "read" on the wedding style.
