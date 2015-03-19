@@ -9,7 +9,7 @@ grouping them into one of three styles (beach, rustic, or ballroom).
 ###Part I: Preprocessing
 
 #####loading_data.py
-* This takes a csv file and loads all fields into a PostGRES database, and saves the raw images into the correct label directory.
+* This takes a csv file and loads all fields into a PostGreSQL database, and saves the raw images into the correct label directory.
 
 
 #####standardize_size.py
@@ -18,9 +18,9 @@ raw images.
 
 #####image_loader.py
 * The ImageLoader class does the following:
-    1.) Creates a master list with all the image files names\
-    2.) Reads in standardized images and converts them into numpy arrays
-    3.) Segments images and saves image segments
+    - Creates a master list with all the image files names\
+    - Reads in standardized images and converts them into numpy arrays
+    - Segments images and saves image segments
 
 
 ###Part II: EDA & Feature Extraction
